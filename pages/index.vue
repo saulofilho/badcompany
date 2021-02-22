@@ -1,27 +1,8 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">central</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div class="wrapper">
+    <Video />
+    <Pink />
+    <Green />
   </div>
 </template>
 
@@ -30,34 +11,66 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+@font-face {
+  font-family: 'MADETommySoftBold';
+  src: url('./assets/fonts/MADETommySoftBold.otf');
+}
+@font-face {
+  font-family: 'MADETommySoftRegular';
+  src: url('./assets/fonts/MADETommySoftRegular.otf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+*:focus {
+  outline: 0;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+html,
+body,
+#root {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
-.links {
-  padding-top: 15px;
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: 'MADETommySoftRegular';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'MADETommySoftRegular';
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #252363;
+}
+
+::selection {
+  background: #252363;
+  color: #e81b80;
 }
 </style>
