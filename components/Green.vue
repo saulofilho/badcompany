@@ -3,10 +3,26 @@
     <img class="green-desktop" src="../assets/images/c-logo.png" alt="logo c" />
     <img
       class="green-mobile"
+      data-aos="fade-right"
       src="../assets/images/c-logo-mobile.png"
       alt="logo c mobile"
     />
-    <div class="expertise">
+    <div class="expertise green-desktop">
+      <div class="title">
+        <p>expertise:</p>
+      </div>
+      <div class="text">
+        <p>special projects</p>
+        <p>brand & position</p>
+        <p>content & production</p>
+        <p>creative consultancy</p>
+        <p>criative sprint</p>
+        <p>events</p>
+        <p>campaign</p>
+        <p>social media</p>
+      </div>
+    </div>
+    <div data-aos="fade-left" class="expertise green-mobile">
       <div class="title">
         <p>expertise:</p>
       </div>
@@ -33,6 +49,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .green-wrapper img {
   padding-top: 140px;

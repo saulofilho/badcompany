@@ -10,6 +10,7 @@
 <script>
 export default {
   mounted() {
+    const bodyOverflow = document.getElementsByTagName('body')[0]
     const videoWrapper = document.getElementById('video-wrapper')
     const videoHero = document.getElementById('video-hero')
 
@@ -17,6 +18,7 @@ export default {
       'ended',
       function () {
         videoWrapper.classList.add('transition-fade')
+        bodyOverflow.classList.add('body-overflow-unset')
       },
       { once: true }
     )
@@ -28,17 +30,27 @@ export default {
 #video-wrapper {
   height: 100vh;
   background: #000;
-  transition: transform 1.5s 0s, opacity 1.25s 0s;
-  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
 }
 .transition-fade {
-  transform: translateX(100vw);
-  opacity: 0;
-  display: none;
+  position: absolute;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: visibility 5s, opacity 5s ease-out;
+}
+body {
+  overflow: hidden;
+}
+.body-overflow-unset {
+  overflow: unset !important;
 }
 @media (max-width: 768px) {
   #video-wrapper {
     display: none;
+  }
+  body {
+    overflow: unset;
   }
 }
 </style>

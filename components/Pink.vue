@@ -1,10 +1,6 @@
 <template>
   <div class="pink-wrapper">
-    <svg
-      class="animation"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 492.66 787.99"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.66 787.99">
       <defs>
         <style>
           .cls-1 {
@@ -92,18 +88,13 @@
   justify-content: center;
   align-items: center;
 }
-.animation {
-  animation: 5s appear;
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-}
 svg {
   width: 300px;
 }
 @media (max-width: 768px) {
+  .pink-wrapper {
+    display: none;
+  }
   svg {
     width: 200px;
   }
