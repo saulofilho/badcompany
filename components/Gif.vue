@@ -15,6 +15,8 @@ export default {}
 }
 .gif-wrapper img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {

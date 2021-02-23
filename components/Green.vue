@@ -52,8 +52,7 @@
   overflow: hidden;
 }
 .green-wrapper img {
-  padding-top: 140px;
-  width: 300px;
+  width: 250px;
 }
 .green-wrapper .expertise {
   position: absolute;
