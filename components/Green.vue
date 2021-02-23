@@ -1,6 +1,11 @@
 <template>
   <div class="green-wrapper">
-    <img src="../assets/images/c-logo.png" alt="logo c" />
+    <img class="green-desktop" src="../assets/images/c-logo.png" alt="logo c" />
+    <img
+      class="green-mobile"
+      src="../assets/images/c-logo-mobile.png"
+      alt="logo c mobile"
+    />
     <div class="expertise">
       <div class="title">
         <p>expertise:</p>
@@ -29,19 +34,48 @@
   align-items: center;
   position: relative;
 }
-img {
+.green-wrapper img {
   padding-top: 140px;
   width: 300px;
 }
-.expertise {
+.green-wrapper .expertise {
   position: absolute;
   top: 5%;
   right: 5%;
 }
-.title {
+.green-wrapper .title {
   color: #252363;
+  font-family: 'MADETommySoftBold';
+  font-size: 16px;
+  padding-bottom: 5px;
 }
-.text {
+.green-wrapper .text {
   color: #fff;
+  font-family: 'MADETommySoftRegular';
+  font-size: 13px;
+}
+.green-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .green-desktop {
+    display: none;
+  }
+  .green-mobile {
+    display: block;
+  }
+  .green-wrapper img {
+    padding-top: 140px;
+    width: 250px;
+  }
+  .green-wrapper .title {
+    color: #252363;
+    font-family: 'MADETommySoftBold';
+  }
+  .green-wrapper .text {
+    color: #fff;
+    font-family: 'MADETommySoftRegular';
+    padding-left: 10px;
+  }
 }
 </style>

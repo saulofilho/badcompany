@@ -5,10 +5,24 @@
 </template>
 
 <style>
+@font-face {
+  font-family: 'MADETommySoftBold';
+  src: url('./assets/fonts/MADETommySoftBold.otf');
+}
+@font-face {
+  font-family: 'MADETommySoftRegular';
+  src: url('./assets/fonts/MADETommySoftRegular.otf');
+}
+@font-face {
+  font-family: 'MADETommySoftBlack';
+  src: url('./assets/fonts/MADETommySoftBlack.otf');
+}
+@font-face {
+  font-family: 'MADETommySoftMedium';
+  src: url('./assets/fonts/MADETommySoftMedium.otf');
+}
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -24,32 +38,42 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: 'MADETommySoftRegular';
+}
+
+a {
   text-decoration: none;
-  padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+ul {
+  list-style: none;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+button {
+  cursor: pointer;
+  font-family: 'MADETommySoftRegular';
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #252363;
+}
+
+::selection {
+  background: #252363;
+  color: #e81b80;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="video-wrapper">
-    <video id="video-hero" width="100%" height="100%" controls>
+  <div id="video-wrapper">
+    <video id="video-hero" width="100%" height="100%" controls autoplay>
       <source src="../assets/videos/video-central.mp4" type="video/mp4" />
       video not supported
     </video>
@@ -10,32 +10,35 @@
 <script>
 export default {
   mounted() {
-    console.log('heeeyyy')
+    const videoWrapper = document.getElementById('video-wrapper')
+    const videoHero = document.getElementById('video-hero')
 
-    const aud = document.getElementById('video-hero')
-    console.log('aud', aud)
-    aud.addEventListener('ended', function () {
-      alert('The audio has ended')
-      console.log('xxx')
-    })
-    // aud.onended = function () {
-    //   alert('The audio has ended')
-    //   console.log('xxx')
-    // }
+    videoHero.addEventListener(
+      'ended',
+      function () {
+        videoWrapper.classList.add('transition-fade')
+      },
+      { once: true }
+    )
   },
 }
-// export default {
-//   function() {
-//     document
-//       .getElementById('video-hero')
-//       .addEventListener('ended', myHandler, false)
-//     function myHandler(e) {
-//       e.preventDefault()
-
-//       alert('finished')
-//     }
-//   },
-// }
 </script>
 
-<style></style>
+<style>
+#video-wrapper {
+  height: 100vh;
+  background: #000;
+  transition: transform 1.5s 0s, opacity 1.25s 0s;
+  transform: translateX(0);
+}
+.transition-fade {
+  transform: translateX(100vw);
+  opacity: 0;
+  display: none;
+}
+@media (max-width: 768px) {
+  #video-wrapper {
+    display: none;
+  }
+}
+</style>
