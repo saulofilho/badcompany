@@ -1,8 +1,8 @@
 <template>
   <div id="video-wrapper">
-    <video id="video-hero" width="100%" height="100%" controls autoplay>
+    <video id="video-hero" controls autoplay>
       <source src="../assets/videos/video-central.mp4" type="video/mp4" />
-      video not supported
+      Your browser does not support HTML5 video.
     </video>
   </div>
 </template>
@@ -33,11 +33,19 @@ export default {
   visibility: visible;
   opacity: 1;
 }
+#video-hero {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .transition-fade {
   position: absolute;
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: visibility 5s, opacity 5s ease-out;
+  transition: visibility 2s, opacity 2s ease-out;
 }
 body {
   overflow: hidden;
