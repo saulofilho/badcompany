@@ -1,6 +1,6 @@
 <template>
   <div id="video-wrapper">
-    <video id="video-hero" controls autoplay>
+    <video id="video-hero" autoplay="autoplay" muted>
       <source src="../assets/videos/video-central.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
