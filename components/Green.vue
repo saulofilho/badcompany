@@ -1,10 +1,10 @@
 <template>
   <div class="green-wrapper">
-    <img class="green-desktop" src="../assets/images/c-logo.png" alt="logo c" />
+    <img class="green-desktop" src="../assets/images/b-desk.png" alt="logo c" />
     <img
       class="green-mobile"
       data-aos="fade-right"
-      src="../assets/images/c-logo-mobile.png"
+      src="../assets/images/b-logo-mob.png"
       alt="logo c mobile"
     />
     <div class="expertise green-desktop">
@@ -52,7 +52,8 @@
   overflow: hidden;
 }
 .green-wrapper img {
-  width: 250px;
+  width: 180px;
+  padding-top: 60px;
 }
 .green-wrapper .expertise {
   position: absolute;
@@ -82,16 +83,13 @@
   }
   .green-wrapper img {
     padding-top: 140px;
-    width: 250px;
+    width: 140px;
   }
   .green-wrapper .title {
-    color: #252363;
-    font-family: 'MADETommySoftBold';
+    font-size: 13px;
   }
   .green-wrapper .text {
-    color: #fff;
-    font-family: 'MADETommySoftRegular';
-    padding-left: 10px;
+    font-size: 10px;
   }
 }
 </style>
