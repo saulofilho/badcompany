@@ -1,6 +1,6 @@
 <template>
   <div class="gif-wrapper">
-    <img src="../assets/gifs/central_gif.gif" alt="gif home mobile version" />
+    <img src="../assets/gifs/animation-mob.gif" alt="gif home mobile version" />
   </div>
 </template>
 
