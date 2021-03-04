@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Video />
+    <!-- <Video /> -->
     <Gif />
-    <Pink />
+    <!-- <Black /> -->
     <Green />
   </div>
 </template>

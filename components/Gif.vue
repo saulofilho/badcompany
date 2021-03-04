@@ -1,6 +1,15 @@
 <template>
   <div class="gif-wrapper">
-    <img src="../assets/gifs/animation-mob.gif" alt="gif home mobile version" />
+    <img
+      class="gif-mob"
+      src="../assets/gifs/gif-mob.gif"
+      alt="gif home mobile version"
+    />
+    <img
+      class="gif-desk"
+      src="../assets/gifs/gif-desk.gif"
+      alt="gif home mobile version"
+    />
   </div>
 </template>
 
@@ -18,10 +27,15 @@ export default {}
   height: 100vh;
   object-fit: cover;
 }
-
-@media (min-width: 768px) {
-  .gif-wrapper {
+.gif-mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .gif-desk {
     display: none;
+  }
+  .gif-mob {
+    display: block;
   }
 }
 </style>

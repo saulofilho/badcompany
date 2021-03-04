@@ -1,6 +1,6 @@
 <template>
   <div class="pink-wrapper">
-    <img src="../assets/images/bad-logo-desk.png" alt="logo c" />
+    <img src="../assets/images/logo-pb.png" alt="logo c" />
   </div>
 </template>
 

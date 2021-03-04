@@ -1,10 +1,10 @@
 <template>
   <div class="green-wrapper">
-    <img class="green-desktop" src="../assets/images/b-desk.png" alt="logo c" />
+    <img class="green-desktop" src="../assets/images/logo-b.png" alt="logo c" />
     <img
       class="green-mobile"
       data-aos="fade-right"
-      src="../assets/images/b-logo-mob.png"
+      src="../assets/images/logo-b.png"
       alt="logo c mobile"
     />
     <div class="expertise green-desktop">
@@ -44,7 +44,7 @@
 .green-wrapper {
   width: 100%;
   height: 100vh;
-  background: #7dcfb6;
+  background: #7dc9af;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,11 @@
   overflow: hidden;
 }
 .green-wrapper img {
-  width: 180px;
+  width: 200px;
+  padding-top: 60px;
+}
+.green-wrapper img.green-mobile {
+  width: 120px;
   padding-top: 60px;
 }
 .green-wrapper .expertise {
@@ -61,7 +65,7 @@
   right: 5%;
 }
 .green-wrapper .title {
-  color: #252363;
+  color: #53585f;
   font-family: 'MADETommySoftBold';
   font-size: 16px;
   padding-bottom: 5px;

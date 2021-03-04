@@ -47,9 +47,9 @@ export default {
   opacity: 0 !important;
   transition: visibility 2s, opacity 2s ease-out;
 }
-body {
+/* body {
   overflow: hidden;
-}
+} */
 .body-overflow-unset {
   overflow: unset !important;
 }
