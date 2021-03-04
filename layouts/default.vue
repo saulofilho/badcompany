@@ -69,11 +69,11 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #252363;
+  background-color: #7dc9af;
 }
 
 ::selection {
-  background: #252363;
-  color: #e81b80;
+  background: #7dc9af;
+  color: #53585f;
 }
 </style>
