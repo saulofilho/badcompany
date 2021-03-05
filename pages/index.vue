@@ -2,7 +2,7 @@
   <div>
     <!-- <Video /> -->
     <Gif />
-    <!-- <Black /> -->
+    <Black />
     <Green />
   </div>
 </template>

@@ -3,7 +3,6 @@
     <img class="green-desktop" src="../assets/images/logo-b.png" alt="logo c" />
     <img
       class="green-mobile"
-      data-aos="fade-right"
       src="../assets/images/logo-b.png"
       alt="logo c mobile"
     />
@@ -22,7 +21,7 @@
         <p>social media</p>
       </div>
     </div>
-    <div data-aos="fade-left" class="expertise green-mobile">
+    <div class="expertise green-mobile">
       <div class="title">
         <p>expertise:</p>
       </div>
