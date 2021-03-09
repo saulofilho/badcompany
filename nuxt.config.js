@@ -6,12 +6,63 @@ export default {
   head: {
     title: 'bad company creative push',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { 
-        hid: 'description', 
-        name: 'description', 
-        content: 'bad company creative push advertising' 
+      {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'bad company creative push advertising'
+      },
+      { property: "og:site_name", content: "I Love Painting" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://badcompany.io",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "bad company creative push advertising",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/icon.png",
+      },
+      { property: "og:image:width", content: "740" },
+      { property: "og:image:height", content: "300" },
+      { name: "twitter:site", content: "@bobross" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://badcompany.io",
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: "bad company creative push advertising",
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: "special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media",
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "/icon.png",
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

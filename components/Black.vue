@@ -14,11 +14,11 @@
   align-items: center;
 }
 .black-wrapper img {
-  width: 180px;
+  width: 190px;
 }
 @media (max-width: 768px) {
   .black-wrapper img {
-    width: 120px;
+    width: 40%;
   }
 }
 </style>
