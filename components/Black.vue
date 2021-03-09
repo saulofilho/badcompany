@@ -18,7 +18,7 @@
 }
 @media (max-width: 768px) {
   .black-wrapper img {
-    width: 180px;
+    width: 120px;
   }
 }
 </style>
