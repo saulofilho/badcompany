@@ -1,6 +1,7 @@
 <template>
   <div class="black-wrapper">
-    <img src="../assets/images/logo-pb.png" alt="logo c" />
+    <img class="text" src="../assets/images/text.png" alt="logo c" />
+    <img src="../assets/images/logo-pb.png" alt="logo badcompany" />
   </div>
 </template>
 
@@ -12,11 +13,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
+  position: relative;
+}
+.black-wrapper .text {
+  width: 100%;
+  top: 50px;
+  position: absolute;
+  padding: 0 50px;
 }
 .black-wrapper img {
   width: 180px;
 }
 @media (max-width: 768px) {
+  .black-wrapper .text {
+    display: none;
+  }
   .black-wrapper img {
     width: 180px;
   }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <Video /> -->
+    <Video />
     <Gif />
     <Black />
     <Green />

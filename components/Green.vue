@@ -44,11 +44,11 @@
   width: 100%;
   height: 100vh;
   background: #7dc9af;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  display: none;
 }
 .green-wrapper img {
   width: 200px;
@@ -83,6 +83,9 @@
   }
   .green-mobile {
     display: block;
+  }
+  .green-wrapper {
+    display: flex;
   }
   .green-wrapper img {
     padding-top: 140px;

@@ -5,11 +5,11 @@
       src="../assets/gifs/gif-mob.gif"
       alt="gif home mobile version"
     />
-    <img
+    <!-- <img
       class="gif-desk"
       src="../assets/gifs/gif-desk.gif"
-      alt="gif home mobile version"
-    />
+      alt="gif desk mobile version"
+    /> -->
   </div>
 </template>
 
@@ -19,10 +19,18 @@ export default {
     const bodyOverflow = document.getElementsByTagName('body')[0]
     const gifWrapper = document.getElementById('gif-wrapper')
 
-    setTimeout(function () {
+    document.addEventListener('click', () => {
       gifWrapper.classList.add('transition-fade')
       bodyOverflow.classList.add('body-overflow-unset')
-    }, 8000)
+    })
+    document.addEventListener('touch', () => {
+      gifWrapper.classList.add('transition-fade')
+      bodyOverflow.classList.add('body-overflow-unset')
+    })
+    // setTimeout(function () {
+    //   gifWrapper.classList.add('transition-fade')
+    //   bodyOverflow.classList.add('body-overflow-unset')
+    // }, 3000)
   },
 }
 </script>
@@ -31,6 +39,7 @@ export default {
 #gif-wrapper {
   height: 100vh;
   width: 100%;
+  display: none;
 }
 #gif-wrapper img {
   width: 100%;
@@ -40,12 +49,11 @@ export default {
 .gif-mob {
   display: none;
 }
-
 .transition-fade {
   position: absolute;
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: visibility 2s, opacity 2s ease-out;
+  transition: visibility 0s linear 300ms, opacity 300ms !important;
 }
 body {
   overflow: hidden;
@@ -55,6 +63,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  #gif-wrapper {
+    display: flex;
+  }
   .gif-desk {
     display: none;
   }
