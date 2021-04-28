@@ -61,7 +61,6 @@ body {
 .body-overflow-unset {
   overflow: unset !important;
 }
-
 @media (max-width: 768px) {
   #gif-wrapper {
     display: flex;
