@@ -7,62 +7,67 @@ export default {
     title: 'bad company creative push',
     meta: [
       {
-        charset: 'utf-8'
+        charset: 'utf-8',
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'bad company creative push advertising'
-      },
-      { property: "og:site_name", content: "I Love Painting" },
-      { hid: "og:type", property: "og:type", content: "website" },
-      {
-        hid: "og:url",
-        property: "og:url",
-        content: "https://badcompany.io",
+        content: 'bad company creative push advertising',
       },
       {
-        hid: "og:title",
-        property: "og:title",
-        content: "bad company creative push advertising",
+        property: 'og:site_name',
+        content: 'bad company creative push advertising',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'https://badcompany.io' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://badcompany.io',
       },
       {
-        hid: "og:description",
-        property: "og:description",
-        content: "special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media",
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'bad company creative push advertising',
       },
       {
-        hid: "og:image",
-        property: "og:image",
-        content: "/icon.png",
-      },
-      { property: "og:image:width", content: "740" },
-      { property: "og:image:height", content: "300" },
-      { name: "twitter:site", content: "@bobross" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        hid: "twitter:url",
-        name: "twitter:url",
-        content: "https://badcompany.io",
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media',
       },
       {
-        hid: "twitter:title",
-        name: "twitter:title",
-        content: "bad company creative push advertising",
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'static/icon.png',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: '@badcompany' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://badcompany.io',
       },
       {
-        hid: "twitter:description",
-        name: "twitter:description",
-        content: "special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media",
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'bad company creative push advertising',
       },
       {
-        hid: "twitter:image",
-        name: "twitter:image",
-        content: "/icon.png",
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'special projects, brand and content, content and production, creative consultancy, creative sprint, evennts, campaign, social media',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'static/icon.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -97,10 +102,28 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'pt',
     },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    loaders: {
+      vue: {
+        transformAssetUrls: {
+          audio: 'src',
+        },
+      },
+    },
+
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
+      })
+    },
+  },
 }

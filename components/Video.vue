@@ -1,6 +1,6 @@
 <template>
   <div id="video-wrapper">
-    <video id="video-hero" autoplay="autoplay" muted controls>
+    <video id="video-hero" controls autoplay>
       <source src="../assets/videos/film.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
@@ -14,6 +14,20 @@ export default {
     const videoWrapper = document.getElementById('video-wrapper')
     const videoHero = document.getElementById('video-hero')
     const gifWrapper = document.getElementById('gif-wrapper')
+
+    // console.log('xx', videoHero.autoplay)
+
+    // setTimeout(function () {
+    //   if (videoHero.muted === true) {
+    //     videoHero.muted = false
+
+    //     if (videoHero.muted === false) {
+    //       videoHero.play()
+    //     }
+
+    //     console.log('xablau', videoHero.muted)
+    //   }
+    // }, 3000)
 
     videoHero.addEventListener(
       'ended',
