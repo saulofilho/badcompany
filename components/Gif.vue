@@ -16,17 +16,22 @@
 <script>
 export default {
   mounted() {
+    const isMobile = window.matchMedia('(max-width: 768px)')
+
     const bodyOverflow = document.getElementsByTagName('body')[0]
     const gifWrapper = document.getElementById('gif-wrapper')
 
-    document.addEventListener('click', () => {
-      gifWrapper.classList.add('transition-fade')
-      bodyOverflow.classList.add('body-overflow-unset')
-    })
-    document.addEventListener('touch', () => {
-      gifWrapper.classList.add('transition-fade')
-      bodyOverflow.classList.add('body-overflow-unset')
-    })
+    if (isMobile.matches) {
+      document.addEventListener('click', () => {
+        gifWrapper.classList.add('transition-fade')
+        bodyOverflow.classList.add('body-overflow-unset')
+      })
+      document.addEventListener('touch', () => {
+        gifWrapper.classList.add('transition-fade')
+        bodyOverflow.classList.add('body-overflow-unset')
+      })
+    }
+
     // setTimeout(function () {
     //   gifWrapper.classList.add('transition-fade')
     //   bodyOverflow.classList.add('body-overflow-unset')
