@@ -72,9 +72,15 @@ body {
   border-radius: 10%;
   padding: 10px;
   border: unset;
+  box-shadow: 4px 4px #7dc9af;
+}
+#btn-play:active {
+  box-shadow: 1px 1px #7dc9af !important;
+  transform: translateY(4px);
 }
 #btn-play:hover {
   background: #7dc9af;
+  box-shadow: 4px 4px #53585f;
 }
 @media (max-width: 768px) {
   #video-wrapper {

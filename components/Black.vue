@@ -23,14 +23,14 @@
   padding: 0 50px;
 }
 .black-wrapper img {
-  width: 190px;
+  width: 200px;
 }
 @media (max-width: 768px) {
   .black-wrapper .text {
     display: none;
   }
   .black-wrapper img {
-    width: 40%;
+    width: 48%;
   }
 }
 </style>

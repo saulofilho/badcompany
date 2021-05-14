@@ -1,15 +1,11 @@
 <template>
   <div id="gif-wrapper">
+    <p class="click-here">click here</p>
     <img
       class="gif-mob"
       src="../assets/gifs/gif-mob.gif"
       alt="gif home mobile version"
     />
-    <!-- <img
-      class="gif-desk"
-      src="../assets/gifs/gif-desk.gif"
-      alt="gif desk mobile version"
-    /> -->
   </div>
 </template>
 
@@ -31,11 +27,6 @@ export default {
         bodyOverflow.classList.add('body-overflow-unset')
       })
     }
-
-    // setTimeout(function () {
-    //   gifWrapper.classList.add('transition-fade')
-    //   bodyOverflow.classList.add('body-overflow-unset')
-    // }, 3000)
   },
 }
 </script>
@@ -65,6 +56,17 @@ body {
 }
 .body-overflow-unset {
   overflow: unset !important;
+}
+.click-here {
+  position: absolute;
+  z-index: 9;
+  top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-style: italic;
+  color: #7dc9af;
 }
 @media (max-width: 768px) {
   #gif-wrapper {
