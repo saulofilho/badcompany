@@ -1,6 +1,7 @@
 <template>
   <div id="video-wrapper">
-    <video id="video-hero" controls autoplay>
+    <button id="btn-play" @click="play">➤</button>
+    <video id="video-hero">
       <source src="../assets/videos/film.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
@@ -15,20 +16,6 @@ export default {
     const videoHero = document.getElementById('video-hero')
     const gifWrapper = document.getElementById('gif-wrapper')
 
-    // console.log('xx', videoHero.autoplay)
-
-    // setTimeout(function () {
-    //   if (videoHero.muted === true) {
-    //     videoHero.muted = false
-
-    //     if (videoHero.muted === false) {
-    //       videoHero.play()
-    //     }
-
-    //     console.log('xablau', videoHero.muted)
-    //   }
-    // }, 3000)
-
     videoHero.addEventListener(
       'ended',
       function () {
@@ -38,6 +25,15 @@ export default {
       },
       { once: true }
     )
+  },
+  methods: {
+    play() {
+      const videoHero = document.getElementById('video-hero')
+      const btnPlay = document.getElementById('btn-play')
+
+      videoHero.play()
+      btnPlay.style.display = 'none'
+    },
   },
 }
 </script>
@@ -66,6 +62,19 @@ body {
 }
 .body-overflow-unset {
   overflow: unset !important;
+}
+#btn-play {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  border-radius: 10%;
+  padding: 10px;
+  border: unset;
+}
+#btn-play:hover {
+  background: #7dc9af;
 }
 @media (max-width: 768px) {
   #video-wrapper {
