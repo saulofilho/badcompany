@@ -2,7 +2,7 @@
   <div id="video-wrapper">
     <button id="btn-play" @click="play">➤</button>
     <video id="video-hero">
-      <source src="../assets/videos/film.mp4" type="video/mp4" />
+      <source src="../assets/videos/badcompany.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
   </div>

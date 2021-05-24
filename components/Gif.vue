@@ -1,11 +1,11 @@
 <template>
   <div id="gif-wrapper">
-    <p class="click-here">click here</p>
     <img
       class="gif-mob"
       src="../assets/gifs/gif-mob.gif"
       alt="gif home mobile version"
     />
+    <p class="click-here">click here</p>
   </div>
 </template>
 
@@ -59,14 +59,13 @@ body {
 }
 .click-here {
   position: absolute;
-  z-index: 9;
-  top: 1%;
+  bottom: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-style: italic;
   color: #7dc9af;
+  font-family: 'MADETommySoftBold';
 }
 @media (max-width: 768px) {
   #gif-wrapper {
