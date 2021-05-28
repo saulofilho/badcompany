@@ -1,8 +1,8 @@
 <template>
   <div id="video-wrapper">
     <button id="btn-play" @click="play">➤</button>
-    <video id="video-hero">
-      <source src="../assets/videos/badcompany.mp4" type="video/mp4" />
+    <video id="video-hero" controls>
+      <source src="../assets/videos/badcompany-2mb.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
   </div>

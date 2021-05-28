@@ -59,7 +59,7 @@ body {
 }
 .click-here {
   position: absolute;
-  bottom: 25%;
+  bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
