@@ -65,7 +65,7 @@ body {
   align-items: center;
   width: 100%;
   color: #7dc9af;
-  font-family: 'MADETommySoftBold';
+  font-size: 12px;
 }
 @media (max-width: 768px) {
   #gif-wrapper {
