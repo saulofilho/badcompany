@@ -64,6 +64,7 @@ body {
   overflow: unset !important;
 }
 #btn-play {
+  width: 35px;
   position: absolute;
   z-index: 999;
   top: 50%;
